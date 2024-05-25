@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    color: white;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 79px;
+    background-color: rgb(30, 29, 29);
+}
+
+.logo {
+    width: 167px;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #ff004f;
+}
+
+nav ul li a:hover {
+    font-size: 19px;
+}
+
+.left {
+    font-size: 25px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    padding-right: 140px;
+    height: 70vh;
+    padding-left: 128px;
+}
+
+.firstSection>div {
+    width: 38%;
+}
+
+.leftSection {
+    font-size: 30px;
+    padding-bottom: 56px;
+}
+
+.rightSection img {
+    width: 121%;
+}
+
+.red {
+    color: rgb(249 31 97);
+}
+
+#element {
+    color: rgb(249 31 97);
+}
+
+.buttons {
+    padding: 50px 0;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    /*  background-color: #1f2e4f;*/
+    border: 1px solid #ff004f;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.leftSection .btn:hover {
+    background: #ff004f;
+}
+
+/*--------------------about----------------*/
+
+
+.secondsection {
+    padding: 80px 0;
+    height: 70vh;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    padding-left: 75px;
+}
+
+.i1 {
+    width: 80%;
+    border-radius: 15px;
+
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.p1 {
+    font-family: "Poppins", sans-serif;
+    margin-right: 50px;
+    font-size: 17px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    font-family: "Poppins", sans-serif;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    font-family: "Poppins", sans-serif;
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*----------------------services------------*/
+
+.services {
+    padding: 80px 0;
+    height: 80vh;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-text h2 {
+    font-size: 55px;
+}
+
+.center-text h2 span {
+    color: rgb(249 31 97);
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 80px;
+    margin-top: 60px;
+    padding: 0 151px;
+}
+
+.b1 {
+    padding: 34px 37px 33px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px white;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+
+.b1 img {
+    margin-bottom: 20px;
+}
+
+.b1 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.b1 p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ded4d4;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.b1 a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 7px 0;
+    color: white;
+    border-bottom: 2px solid #5d6c83;
+    transition: all .50s ease;
+}
+
+.b1 i {
+    vertical-align: middle;
+    font-size: 25px;
+    color: white;
+    margin-left: 5px;
+}
+
+.b1 a:hover {
+    border-bottom: 2px solid antiquewhite;
+}
+
+.b1:hover {
+    border: 1px solid white;
+    transform: translateY(-5px) scale(1.03);
+}
+
+/*----------------------project------*/
+
+.projects {
+    padding: 40px 0;
+    height: 80vh;
+}
+
+.header-action-aria {
+    margin-top: .7rem;
+    display: flex;
+    gap: .7rem;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.projects p {
+    font-size: 17px;
+    line-height: 140%;
+}
+
+.heading-p {
+    padding-top: 6rem;
+}
+
+.btn-btn2 {
+    width: auto;
+    display: inline-block;
+    padding: .8rem;
+    width: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    transition: white;
+    border: 1px solid #ff004f;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+
+.btn-btn2:hover {
+    background: #ff004f;
+}
+
+/*
+img{
+    width: 100%;
+    display: block;
+}
+
+*/
+
+.container {
+    margin: 60px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project {
+    cursor: pointer;
+    padding: 24px;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+
+.project:hover {
+    border: 1px solid white;
+    transform: translateY(-5px) scale(1.03);
+}
+
+/*---------------contact-----------------------------------------*/
+
+.contact-form {
+    padding: 100px 0;
+    height: 85%;
+    padding-bottom: 10px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    color: #fff;
+    padding: 1.5em;
+    font-size: 18px;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+
+}
+
+
+.btn2 {
+    border: 1px solid #ff004f;
+    transition: background 0.5s;
+    padding: 15px 28px;
+    background: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background: #ff004f;
+}
+
+
+/*---------------footer-----------------------------------------*/
+
+
+.footer {
+    background-color: rgb(30, 29, 29);
+    padding: 39px 86px;
+    height: 42vh;
+    border-top-right-radius: 3000px;
+}
+
+.footer .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    gap: 104px;
+    align-items: flex-start;
+}
+
+.footer .grid .box h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 26px;
+    text-transform: capitalize;
+}
+
+.footer .grid .box a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
+    color: white;
+}
+
+.footer .grid .box a i {
+    padding-right: 17px;
+    color: antiquewhite;
+    transition: .2s linear;
+}
+
+.footer .grid .box a:hover {
+    color: antiquewhite;
+}
+
+.footer .grid .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 20px;
+    border-top: 15px;
+    font-size: 22px;
+    color: white;
+}
+
+.footer .credit span {
+    color: rgb(249 31 97);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    background-color: #333;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 50%;
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s, visibility 0.3s;
+    /*border: 1px solid #ff004f;*/
+}
+
+.scroll-to-top:hover {
+    background-color: #555;
+    /* background: #ff004f;*/
+}
+
+
+
+
+
+
+
+
+
+
+/*------------mediaquery-------*/

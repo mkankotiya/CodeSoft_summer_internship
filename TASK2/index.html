@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meet - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="home">
+        <header>
+            <nav>
+                <div class="left">
+                    <img src="images/logo.png" class="logo" alt="">
+                </div>
+                <div class="right"></div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hi, My name is <span class="red">Meet</span>
+                    <div>and I am a Passionate</div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                        <a href="https://github.com/mkankotiya?tab=repositories" class="btn">Visit Github</a>
+                    </div>
+                </div>
+                <div class="rightSection">
+                    <img src="images/p1.png" alt="">
+                </div>
+            </section>
+    </div>
+
+    <!---------------------------second section--------------------------------------------->
+
+    <div id="about">
+        <section class="secondsection">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="i1" src="images/u1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="p1">I'm Meet Kankotiya, a passionate and dedicated web developer with a love for
+                        creating innovative and efficient solutions. My journey into the world of Web Devlopment
+                        began 2021 and has been an exciting adventure ever since.I started my professional career in
+                        web development and have since gained experience in various aspects of front-end and
+                        back-end development. Over the years, I have worked with diverse teams and clients, allowing
+                        me to hone my skills and stay updated with the latest industry trends.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br> Web App devlopment</li>
+                            <li><span>App Development</span><br>Bulding Android/ios Apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>front-end devloper</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>study in GCET college</li>
+                            <li><span>2019</span><br> 11/12th from swaminarayan gurukul,surat</li>
+                            <li><span>2017</span><br>9/10th from BAPS vidhaya dham,sarangpur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!---------------------------------------------------services------------------------------>
+
+    <section class="services" id="services">
+        <div class="center-text">
+            <h2>My <span>Services</span></h2>
+        </div>
+
+        <div class="services-content">
+            <div class="b1">
+                <img src="images/s-1.svg" alt="">
+                <h3>UI/UX Design</h3>
+                <p>Web design is the creation of websites and pages to reflect a company's brand and information and
+                    ensure a user-friendly experience.</p>
+                <a href="#">
+                    Download now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="b1">
+                <img src="images/s-2.svg" alt="">
+                <h3>Web Design</h3>
+                <p>Web design is the creation of websites and pages to reflect a company's brand and information and
+                    ensure a user-friendly experience.</p>
+                <a href="#">
+                    Download now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="b1">
+                <img src="images/s-3.svg" alt="">
+                <h3>App Design</h3>
+                <p>Web design is the creation of websites and pages to reflect a company's brand and information and
+                    ensure a user-friendly experience.</p>
+                <a href="#">
+                    Download now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------project-------------------------------------------->
+
+    <section class="projects" id="projects">
+        <div class="center-text">
+            <h2>My <span>Projects</span></h2>
+        </div>
+
+        <div class="container project-container">
+            <div class="project">
+                <img src="images/m1.png" alt="">
+                <h3>Project 1</h3>
+                <div class="header-action-aria">
+                    <a href="" class="btn-btn2">Github</a>
+                    <a href="" class="btn-btn2">Live Demo</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/m2.png" alt="">
+                <h3>Project 2</h3>
+                <div class="header-action-aria">
+                    <a href="" class="btn-btn2">Github</a>
+                    <a href="" class="btn-btn2">Live Demo</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/m3.png" alt="">
+                <h3>Project 3</h3>
+                <div class="header-action-aria">
+                    <a href="" class="btn-btn2">Github</a>
+                    <a href="" class="btn-btn2">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------contact------------------------------>
+    <section id="contact" class="contact-form">
+        <div class="center-text">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            </div>
+            <input type="submit" value="Send Message" class="btn btn2">
+        </form>
+    </section>
+
+    </main>
+
+    <!---------------------------------------footer--------------------------------------------->
+
+    <footer class="footer">
+
+        <section class="grid">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-angle-right"></i> Home</a>
+                <a href="#about"> <i class="fas fa-angle-right"></i> About</a>
+                <a href="#services"> <i class="fas fa-angle-right"></i> Services</a>
+                <a href="#projects"> <i class="fas fa-angle-right"></i> Project</a>
+            </div>
+
+            <div class="box">
+                <h3>contact me</h3>
+                <a href="tel:7435892485"><i class="fas fa-phone"></i> +91 7435892485</a>
+                <a href="tel:7435892485"><i class="fas fa-phone"></i> +91 7435892485</a>
+                <a href="mailto:meetkankotiya22@gmail.com"><i class="fas fa-envelope"></i> meetkankotiya22@gmail.com</a>
+                <a href="https://www.google.com/myplace"><i class="fas fa-map-marker-alt"></i> surat, india-395004 </a>
+            </div>
+
+            <div class="box">
+                <h3>follow me</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            </div>
+
+        </section>
+
+        <div class="credit">&copy; copyright @
+            <?= date('Y'); ?> by <span>Meet Kankotiya</span> | all rights reserved!
+        </div>
+
+        <a href="#" class="scroll-to-top" id="scrollToTopBtn">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
+    </footer>
+
+    <!----------------------------------js--------------------------------------------------------------->
+
+    <!---------------------------------homejs------------------------------------------->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Devloper', 'Graphic Designer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <!-----------------------------------aboutjs---------------------------------------->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <!-----------------------------------scrolljs---------------------------------------->
+
+    <script>
+        let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        scrollToTopBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+
+</body>
+
+</html>
