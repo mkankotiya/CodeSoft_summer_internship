@@ -2,220 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website - Meet kankotiya</title>
+    <title>Khodal Diamond</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="https://kit.fontawesome.com/c6fe41677a.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="IMAGES/l1.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
+<body class="overflow-x-hidden">
+    <div class="container mx-auto" id="home">
+        <header>
+            <nav class="bg flex justify-between">
+                <div class="font-bold flex items-center">Shree Khodal Diamond</div>
+                <ul class="navbar flex items-center">
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <li><a href="section2">Services</a></li>
+                    <li><a href="section2">Contact US</a></li>
+                    <li><button class="btn">Login</button></li>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Meet</span><br>Kankotiya from India</h1>
-            </div>
-        </div>
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="IMAGES/u1.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I am very punctual and like to do my all works throughout the day at right time. I love to eat
-                        simple and healthy food. I like dancing, reading books, playing badminton and cooking in my
-                        spare time. I never bunk my classes and attend every class.</p>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1" >
+                <div class="flex ">
+                    <div class="left flex justify-center flex-col px-2">
+                        <h1 class="my-1 f2">Where Every Sparkle Tells a Story</h1>
+                        <p class="font-size">Welcome to Shree Khodal Diamond, where brilliance meets craftsmanship in
+                            every facet of our diamonds. Our passion for perfection drives us to create timeless pieces
+                            that capture the essence of elegance and beauty. Step into our world and discover a symphony
+                            of sparkle and sophistication, crafted just for you.</p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" ondblclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" ondblclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" ondblclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI?UX</span><br>Designing Web/App interface</li>
-                            <li><span>Web Development</span><br> Web App devlopment</li>
-                            <li><span>App Development</span><br>Bulding Android/ios Apps </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023 - current</span><br>front-end devloper</li>
 
-                        </ul>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021</span><br>study in GCET college</li>
-                            <li><span>2019</span><br> 11/12th from swaminarayan gurukul,surat</li>
-                            <li><span>2017</span><br>9/10th from BAPS vidhaya dham,sarangpur</li>
-                        </ul>
+                    <div class="right flex justify-center rotate ">
+                        <img class="gems" src="images/p14.png" alt="">
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!------------------services------------->
+            </section>
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Web design is the creation of websites and pages to reflect a company's brand and information and
-                        ensure a user-friendly experience.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Web design is the creation of websites and pages to reflect a company's brand and information and
-                        ensure a user-friendly experience.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Web design is the creation of websites and pages to reflect a company's brand and information and
-                        ensure a user-friendly experience.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
+            <!---------------about--------------->
 
-<!------------------portfolio--------------->
 
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="IMAGES/work-1.png">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Social media allows people to be creative and share interesting ideas with their followers or fans. Certain social media applications such as Twitter, Facebook</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="IMAGES/work-2.png">
-                <div class="layer">
-                    <h3>Music App</h3>
-                    <p>Social media allows people to be creative and share interesting ideas with their followers or fans. Certain social media applications such as Twitter, Facebook</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="IMAGES/work-3.png">
-                <div class="layer">
-                    <h3>Online shoping App</h3>
-                    <p>Social media allows people to be creative and share interesting ideas with their followers or fans. Certain social media applications such as Twitter, Facebook</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-    </div>
-</div>
+            <section class="section2 fade-in" id="about">
+                <h1 class="h1 fade-in">About Us</h1>
+                <p class="p1 fade-in">Welcome to Shree Khodal Diamond, where passion for diamonds meets the art of
+                    craftsmanship. With a rich heritage steeped in tradition and excellence, we pride ourselves on
+                    creating exquisite diamond pieces that resonate with elegance and sophistication.</p>
 
-<!-----------contact------------->
+                <p class="p2 fade-in">At Shree Khodal Diamond, we are driven by a singular mission: to craft diamonds
+                    that not
+                    only dazzle the eye but also touch the soul. With a team of skilled artisans and cutting-edge
+                    technology, we meticulously transform raw stones into timeless treasures, each bearing the hallmark
+                    of our commitment to quality and beauty.</p>
 
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>meetkankotiya22@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>7435892485</p>
-                <div class="social-icon">
-                    <a href=""><i class="fa-brands fa-facebook"></i></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://instagram.com/m_kankotiya?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/meet-kankotiya-b30270267"><i class="fa-brands fa-linkedin"></i></a>
+                <p class="p3 fade-in">Join us on a journey of brilliance and discover the allure of Shree Khodal Diamond
+                    – where
+                    every diamond tells a story, and every moment shines with unparalleled radiance.</p>
+            </section>
+            <div class="contain">
+                <div class="upper">
+                    <div class="upper-left flex-col justify-center">
+                        <h1 class="h2">Our Mission</h1>
+                        <p class="p4">At Shree Khodal Diamond, our mission is to craft diamonds that transcend beauty,
+                            embodying elegance and excellence in every facet. With dedication and precision, we strive
+                            to create treasures that inspire, enriching lives with the sparkle of dreams fulfilled</p>
+                    </div>
+                    <div class="upper-right justify-center">
+                        <img class="i1 fade-in" src="images/p17.jpg" alt="">
+                    </div>
                 </div>
-                <a href="IMAGES/my-cv.pdf" download class="btn btn2">Download CV</a>
+                <div class="lower">
+                    <div class="lower-left justify-center">
+                        <img class="i1 fade-in" src="images/p19.jpg" alt="">
+                    </div>
+                    <div class="lower-right flex-col justify-center">
+                        <h1 class="h2">Our Vision</h1>
+                        <p class="p4">To become the premier name in diamonds, blending innovation with timeless
+                            craftsmanship to illuminate every cherished moment</p>
+                    </div>
+                </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+        </main>
+
+    </div>
+        <!--------------footer----------------------------------->
+
+        <footer class="footer">
+
+            <section class="grid">
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#home"> <i class="fas fa-angle-right"></i> Home</a>
+                    <a href="#about"> <i class="fas fa-angle-right"></i> About</a>
+                    <a href="#services"> <i class="fas fa-angle-right"></i> Services</a>
+                    <a href="#projects"> <i class="fas fa-angle-right"></i> Project</a>
+                </div>
+
+                <div class="box">
+                    <h3>contact me</h3>
+                    <a href="tel:7435892485"><i class="fas fa-phone"></i> +91 7435892485</a>
+                    <a href="tel:7435892485"><i class="fas fa-phone"></i> +91 7435892485</a>
+                    <a href="mailto:meetkankotiya22@gmail.com"><i class="fas fa-envelope"></i>
+                        meetkankotiya22@gmail.com</a>
+                    <a href="https://www.google.com/myplace"><i class="fas fa-map-marker-alt"></i> surat, india-395004
+                    </a>
+                </div>
+
+                <div class="box">
+                    <h3>follow me</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                    <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+                </div>
+
+            </section>
+
+            <div class="credit">&copy; copyright @
+                <?= date('Y'); ?> by <span>Meet Kankotiya</span> | all rights reserved!
             </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright  Meet. Made with by Meet Kankotiya</p>
-    </div>
-</div>
+
+            <a href="#" class="scroll-to-top" id="scrollToTopBtn">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+
+        </footer>
+
+
 
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", function () {
+                var aboutMeSection = document.querySelector(".section2");
+                var scrollPosition = window.scrollY + window.innerHeight;
+                var sectionPosition = aboutMeSection.offsetTop;
+
+                // Check if scroll position is within the range of section1 and section2
+                var section1 = document.querySelector(".section1");
+                var section1Position = section1.offsetTop;
+                var section1Height = section1.offsetHeight;
+                var isScrollingUp = window.scrollY < section1Position;
+
+                if (isScrollingUp || scrollPosition >= sectionPosition) {
+                    aboutMeSection.classList.add("animate");
+                } else {
+                    aboutMeSection.classList.remove("animate");
+                }
+            });
+        });
+        <!-----------------------vision & mission------------------------------>
+        document.addEventListener("DOMContentLoaded", function () {
+            var fadeElements = document.querySelectorAll(".fade-in");
+
+            function checkInView() {
+                fadeElements.forEach(function (element) {
+                    var position = element.getBoundingClientRect();
+
+                    if (position.top < window.innerHeight && position.bottom >= 0) {
+                        element.classList.add("active");
+                    } else {
+                        element.classList.remove("active");
+                    }
+                });
             }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-        }
+
+            window.addEventListener("scroll", checkInView);
+            window.addEventListener("resize", checkInView);
+
+            checkInView();
+        });
+
+
+
     </script>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-       
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbznxinmKvhrranP-Pgpqr4zYr8t3H2lHuzOuILhsZTXxU0UwXq_jZQ9465NULRY8_Mk/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
 </body>
 
 </html>
